@@ -1,0 +1,21 @@
+name: PR Build Test
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v2
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🧹 Lint test
+        run: yarn lint || exit 1
+
+      - name: ✅ Build Test
+        run: yarn build || exit 1
