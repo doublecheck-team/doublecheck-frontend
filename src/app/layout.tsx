@@ -1,5 +1,8 @@
 import React from 'react';
 import type { Metadata } from "next";
+
+import '@/styles/globals.css';
+import '@/styles/reset.css';
 import { Providers } from '@/app/provider';
 import { pretendard } from '@/styles/fonts';
 

@@ -13,6 +13,6 @@ export default function MainPage() {
 
 const S = {
   Wrapper: styled.div`
-    width: 100%;
+
   `,
 };
