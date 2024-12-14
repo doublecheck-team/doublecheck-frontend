@@ -13,4 +13,7 @@ export const Color = {
   Gray04: '#818181',
   Gray05: '#383838',
   Gray06: '#242424',
+
+  White: '#FFFFFF',
+  Black: '#000000',
 }

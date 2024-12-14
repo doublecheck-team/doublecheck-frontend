@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import '@/styles/globals.css';
 import '@/styles/reset.css';
 import { Providers } from '@/app/provider';
-import { pretendard } from '@/styles/fonts';
 
 export const metadata: Metadata = {
   title: "Double Check",
@@ -17,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={pretendard.className}>
+    <html lang="ko">
       <body>
         <Providers>
           {children}
