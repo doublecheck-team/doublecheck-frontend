@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: -apple-system, Poppins, sans-serif !important;
   padding: 0;
   margin: 0;
 }
@@ -8,10 +7,58 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Poppins, sans-serif;
+  font-family: -apple-system, SpoqaHanSansNeo, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.flex-box{
+  display: flex;
+  align-items: center;
+  &.space-between{
+    justify-content: space-between;
+  }
+  &.center{
+    justify-content: center;
+  }
+  &.start{
+    justify-content: flex-start;
+  }
+  &.end{
+    justify-content: flex-end;
+  }
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/GmarketSansTTFMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/spoqa/SpoqaHanSansNeo-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/spoqa/SpoqaHanSansNeo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/spoqa/SpoqaHanSansNeo-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/spoqa/SpoqaHanSansNeo-Bold.ttf") format("truetype");
 }

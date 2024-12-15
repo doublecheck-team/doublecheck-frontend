@@ -1,31 +1,3 @@
-import localFont from 'next/font/local';
-
-export const pretendard = localFont({
-  src: [
-    {
-      path: '../assets/fonts/Poppins-Light.ttf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../assets/fonts/Poppins-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../assets/fonts/Poppins-Medium.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../assets/fonts/Poppins-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-pretendard',
-});
-
 export const FontWeight = {
   Bold: 700,
   Medium: 500,
