@@ -58,15 +58,18 @@ const S = {
     left: 50%;
     bottom: 10%;
     transform: translateX(-50%);
+    width: 100%;
+    padding: 24px;
+    margin: 0 auto;
+    text-align: center;
     p{
-      ${Typography.B3Regular};
-      color: ${Color.Gray06};
+      ${Typography.B4Regular};
+      color: ${Color.Gray01};
       text-align: center;
     }
     button {
-      margin-top: 24px;
-      width: 320px;
-      height: 48px;
+      margin: 24px auto 0;
+      text-align: center;
     }
   `,
 };
