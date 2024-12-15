@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styled from '@emotion/styled';
 import NavigateNextOutlinedIcon from '@mui/icons-material/NavigateNextOutlined';
 
@@ -8,7 +9,6 @@ import { MainButton } from '@/components/common/MainButton';
 import { TextTitle } from '@/components/atoms/TextTitle';
 import { CustomCheck } from '@/components/molecules/CustomCheck';
 import { Color } from '@/styles/colors';
-import { useRouter } from 'next/navigation';
 
 export default function AgreementPage() {
   const router = useRouter();
@@ -41,7 +41,7 @@ export default function AgreementPage() {
       <TextTitle>
         서비스 사용을 위한
         <br />
-        약관에 동의해주세요.
+        약관에 동의해주세요
       </TextTitle>
       <S.Content>
         <div
@@ -68,7 +68,14 @@ export default function AgreementPage() {
           </div>
         ))}
       </S.Content>
-      <MainButton text="동의하기" disabled={!(isChecked[0] && isChecked[1])} />
+
+      <S.ButtonWrapper>
+        <MainButton
+          text="다음"
+          disabled={!(isChecked[0] && isChecked[1])}
+          style={{ flex: 1 }}
+        />
+      </S.ButtonWrapper>
     </S.Wrapper>
   );
 }
@@ -76,8 +83,14 @@ export default function AgreementPage() {
 const S = {
   Wrapper: styled.div`
     padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   `,
   Content: styled.ul`
     margin: 42px 0;
-  `
+  `,
+  ButtonWrapper: styled.div`
+    margin-top: auto;
+  `,
 }
